@@ -18,6 +18,9 @@ FIGS=$(FIGS_SVG) $(FIGS_DIO) $(FIGS_PDF) $(FIGS_PY)
 
 all: $(OUT).tex $(FIGS) | $(BUILDDIR)
 	$(LATEXMK) -pdf
+	biber $(OUT)
+	$(LATEXMK) -pdf $(OUT)
+	$(LATEXMK) -pdf $(OUT)
 
 figures: $(FIGS)
 
