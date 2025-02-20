@@ -1,12 +1,12 @@
 \documentclass[
     iai, % Saisir le nom de l'institut rattaché
     eai, % Saisir le nom de l'orientation
-    confidential, % Décommentez si le travail est confidentiel
+    %confidential, % Décommentez si le travail est confidentiel
 ]{heig-tb}
 
 \usepackage[nooldvoltagedirection,european,americaninductors]{circuitikz}
 
-\signature{mbernasconi.svg} % Remplacer par votre propre signature vectorielle.
+\signature{chevalley.svg} % Remplacer par votre propre signature vectorielle.
 
 \makenomenclature
 \makenoidxglossaries
@@ -35,6 +35,7 @@
 %% Résumé / Résumé publiable / Version abrégée
 \begin{abstract}
     \input{abstract}
+    
 \end{abstract}
 
 %% Sommaire et tables
@@ -69,24 +70,7 @@
 \appendixpage
 \addappheadtotoc
 
-%%if
-\chapter{Première annexe}
 
-Les annexes n'ont pas un contenu \underline{normatif} mais \underline{descriptif}. Tout contenu annexé ne doit pas être nécessaire à la bonne compréhension du travail.
-
-Les annexes contiennent généralement :
-
-\begin{itemize}
-    \item les dessins mécaniques (mises en plan);
-    \item les schémas électriques détaillés;
-    \item des photographies du projet;
-    \item des scripts et des extraits de code source;
-    \item des documents techniques \pex \emph{datasheet};
-    \item des développements mathématiques.
-\end{itemize}
-\section{Sous section}
-\lipsum[1]
-%%fi
 
 \let\cleardoublepage\clearpage
 \backmatter
